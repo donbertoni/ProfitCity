@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Executivo - ProfitCity (Florianópolis Sandbox)</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome para Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <!-- Header / Topbar -->
+    <header class="bg-slate-900 text-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center space-x-3 mb-2 md:mb-0">
+                <div class="bg-blue-600 p-2.5 rounded-lg text-white">
+                    <i class="fa-solid fa-city text-xl"></i>
+                </div>
+                <div>
+                    <h1 class="text-xl font-bold tracking-wide">PROFITCITY <span class="text-blue-400 font-light">FLORIANÓPOLIS SANDBOX</span></h1>
+                    <p class="text-xs text-slate-400">Social Capital Amplifier • Sistema Operacional de Gestão Pública Baseada em Valor e Eficiência</p>
+                </div>
+            </div>
+            <div class="flex items-center space-x-4 text-sm">
+                <span class="bg-slate-800 px-3 py-1.5 rounded-full border border-slate-700 text-slate-300">
+                    <i class="fa-solid fa-network-wired text-blue-400 mr-1.5"></i> Solana + Bittensor Subnet + Engine Assíncrona
+                </span>
+                <span class="text-slate-400">|</span>
+                <span class="text-slate-300"><i class="fa-regular fa-clock mr-1.5"></i> Setembro / 2026</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 py-8 space-y-8">
+
+        <!-- QUADRO EXPLICATIVO RESUMIDO DO PROJETO (TOPO) -->
+        <section class="bg-gradient-to-r from-slate-900 via-blue-950 to-slate-900 text-white rounded-2xl p-6 md:p-8 shadow-xl border border-blue-500/30">
+            <div class="max-w-3xl">
+                <span class="bg-blue-500/20 text-blue-300 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider border border-blue-400/30">
+                    Tese Central & Social Capital Amplifier
+                </span>
+                <h2 class="text-2xl md:text-3xl font-bold mt-3 mb-2">ProfitCity: Governança Baseada em Prova de Valor e Execução Criptográfica</h2>
+                <p class="text-blue-100 text-sm md:text-base leading-relaxed mb-6">
+                    O <strong>ProfitCity</strong> ressignifica o ecossistema urbano através da tríade <strong>PRO</strong> (Profissionalismo e alta performance técnica na máquina pública), <strong>Fit</strong> (Adequação, *product-market fit* das políticas públicas e bem-estar característico da qualidade de vida de Florianópolis) e <strong>City</strong> (O laboratório urbano descentralizado). Substituímos a opacidade burocrática por uma arquitetura descentralizada orientada a indicadores reais de bem-estar e transparência.
+                </p>
+            </div>
+            
+            <!-- Cards Internos do Quadro -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 border-t border-blue-900/60">
+                <div class="bg-white/10 backdrop-blur-sm p-4 rounded-xl border border-white/10">
+                    <div class="text-blue-300 text-xs font-medium uppercase">Governança & Waze de Obras</div>
+                    <div class="text-lg font-bold mt-1">DAO Cívica & Crowdsourcing</div>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm p-4 rounded-xl border border-white/10">
+                    <div class="text-blue-300 text-xs font-medium uppercase">Ingestão & Telemetria</div>
+                    <div class="text-lg font-bold mt-1">Harvesters (Python / Solana)</div>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm p-4 rounded-xl border border-white/10">
+                    <div class="text-blue-300 text-xs font-medium uppercase">Consenso & Validação</div>
+                    <div class="text-lg font-bold mt-1">Nós Validadores Bittensor</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- KPI METRICS GRID -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200 flex items-center justify-between">
+                <div>
+                    <p class="text-xs font-medium text-slate-500 uppercase tracking-wider">Smart Contracts</p>
+                    <h3 class="text-2xl font-bold text-slate-900 mt-1">04 Programas</h3>
+                    <span class="text-xs text-blue-600 font-semibold bg-blue-50 px-2 py-0.5 rounded mt-1 inline-block">Anchor / Escrow On-Chain</span>
+                </div>
+                <div class="bg-blue-50 text-blue-600 p-3.5 rounded-xl">
+                    <i class="fa-solid fa-code text-xl"></i>
+                </div>
+            </div>
+
+            <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200 flex items-center justify-between">
+                <div>
+                    <p class="text-xs font-medium text-slate-500 uppercase tracking-wider">Waze de Obras (Demanda)</p>
+                    <h3 class="text-2xl font-bold text-slate-900 mt-1">Ativo (P2P)</h3>
+                    <span class="text-xs text-emerald-600 font-semibold bg-emerald-50 px-2 py-0.5 rounded mt-1 inline-block">Mapeamento Cidadão</span>
+                </div>
+                <div class="bg-emerald-50 text-emerald-600 p-3.5 rounded-xl">
+                    <i class="fa-solid fa-map-location-dot text-xl"></i>
+                </div>
+            </div>
+
+            <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200 flex items-center justify-between">
+                <div>
+                    <p class="text-xs font-medium text-slate-500 uppercase tracking-wider">Validação Distribuída</p>
+                    <h3 class="text-2xl font-bold text-slate-900 mt-1">Rede Bittensor</h3>
+                    <span class="text-xs text-indigo-600 font-semibold bg-indigo-50 px-2 py-0.5 rounded mt-1 inline-block">Consenso P2P Ativo</span>
+                </div>
+                <div class="bg-indigo-50 text-indigo-600 p-3.5 rounded-xl">
+                    <i class="fa-solid fa-network-wired text-xl"></i>
+                </div>
+            </div>
+
+            <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200 flex items-center justify-between">
+                <div>
+                    <p class="text-xs font-medium text-slate-500 uppercase tracking-wider">Governança de Tokens</p>
+                    <h3 class="text-2xl font-bold text-slate-900 mt-1">DAO Municipal</h3>
+                    <span class="text-xs text-purple-600 font-semibold bg-purple-50 px-2 py-0.5 rounded mt-1 inline-block">DeFi Cidadão</span>
+                </div>
+                <div class="bg-purple-50 text-purple-600 p-3.5 rounded-xl">
+                    <i class="fa-solid fa-coins text-xl"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- SEÇÃO ESPECIAL: A CEREJA DO BOLO - COMPARATIVO DE IDH E QUALIDADE DE VIDA ENTRE CAPITAIS -->
+        <section class="bg-gradient-to-br from-blue-900 via-slate-900 to-indigo-950 text-white rounded-2xl shadow-xl border border-blue-500/40 p-6 md:p-8 space-y-6">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 border-b border-blue-800/60 pb-5">
+                <div>
+                    <span class="bg-amber-400 text-slate-950 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                        ⭐ A Cereja do Bolo — Benchmark Nacional
+                    </span>
+                    <h3 class="text-2xl font-bold mt-2">Florianópolis no topo do IDH-M e Qualidade de Vida entre as Capitais Brasileiras</h3>
+                    <p class="text-blue-100 text-sm mt-1">Análise comparativa baseada em dados oficiais do IBGE, PNUD e FIRJAN sobre desenvolvimento humano, longevidade e renda.</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm p-4 rounded-xl border border-white/10 text-center min-w-[180px]">
+                    <span class="text-xs text-blue-300 block uppercase font-medium">IDH-M Florianópolis</span>
+                    <span class="text-2xl font-extrabold text-emerald-400">0.847</span>
+                    <span class="text-[10px] text-slate-300 block mt-0.5">1º Lugar entre as Capitais</span>
+                </div>
+            </div>
+
+            <!-- Tabela Comparativa de Capitais (IDH e Qualidade de Vida) -->
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-blue-950/80 text-blue-300 text-xs font-semibold uppercase tracking-wider border-b border-blue-800/60">
+                            <th class="py-3.5 px-4">Capital / Município</th>
+                            <th class="py-3.5 px-4">IDH-M Geral</th>
+                            <th class="py-3.5 px-4">Longevidade (Saúde)</th>
+                            <th class="py-3.5 px-4">Educação (Média)</th>
+                            <th class="py-3.5 px-4">Renda Per Capita</th>
+                            <th class="py-3.5 px-4">Posição Nacional</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-blue-900/40 text-sm">
+                        <tr class="bg-blue-600/20 font-bold">
+                            <td class="py-3 px-4 text-white flex items-center"><i class="fa-solid fa-trophy text-amber-400 mr-2">></i> Florianópolis (SC)</td>
+                            <td class="py-3 px-4 text-emerald-400">0.847 (Muito Alto)</td>
+                            <td class="py-3 px-4 text-slate-200">0.895</td>
+                            <td class="py-3 px-4 text-slate-200">0.800</td>
+                            <td class="py-3 px-4 text-slate-200">0.850</td>
+                            <td class="py-3 px-4"><span class="bg-emerald-500/30 text-emerald-300 text-xs px-2.5 py-1 rounded-full border border-emerald-400/40">1º Lugar</span></td>
+                        </tr>
+                        <tr class="hover:bg-white/5 transition">
+                            <td class="py-3 px-4 text-slate-200">Vitória (ES)</td>
+                            <td class="py-3 px-4 text-slate-300">0.845</td>
+                            <td class="py-3 px-4 text-slate-300">0.885</td>
+                            <td class="py-3 px-4 text-slate-300">0.802</td>
+                            <td class="py-3 px-4 text-slate-300">0.852</td>
+                            <td class="py-3 px-4 text-slate-400">2º Lugar</td>
+                        </tr>
+                        <tr class="hover:bg-white/5 transition">
+                            <td class="py-3 px-4 text-slate-200">Curitiba (PR)</td>
+                            <td class="py-3 px-4 text-slate-300">0.823</td>
+                            <td class="py-3 px-4 text-slate-300">0.865</td>
+                            <td class="py-3 px-4 text-slate-300">0.768</td>
+                            <td class="py-3 px-4 text-slate-300">0.838</td>
+                            <td class="py-3 px-4 text-slate-400">3º Lugar</td>
+                        </tr>
+                        <tr class="hover:bg-white/5 transition">
+                            <td class="py-3 px-4 text-slate-200">São Paulo (SP)</td>
+                            <td class="py-3 px-4 text-slate-300">0.805</td>
+                            <td class="py-3 px-4 text-slate-300">0.860</td>
+                            <td class="py-3 px-4 text-slate-300">0.741</td>
+                            <td class="py-3 px-4 text-slate-300">0.820</td>
+                            <td class="py-3 px-4 text-slate-400">4º Lugar</td>
+                        </tr>
+                        <tr class="hover:bg-white/5 transition">
+                            <td class="py-3 px-4 text-slate-200">Belo Horizonte (MG)</td>
+                            <td class="py-3 px-4 text-slate-300">0.810</td>
+                            <td class="py-3 px-4 text-slate-300">0.861</td>
+                            <td class="py-3 px-4 text-slate-300">0.753</td>
+                            <td class="py-3 px-4 text-slate-300">0.822</td>
+                            <td class="py-3 px-4 text-slate-400">5º Lugar</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="text-xs text-blue-200/80 italic">
+                * Nota analítica: O ecossistema ProfitCity utiliza estes patamares elevados como linha de base para calibrar as metas de eficiência fiscal e garantir que os investimentos públicos incrementem ainda mais o bem-estar e a equidade urbana.
+            </p>
+        </section>
+
+        <!-- ABA DE INDICADORES BÁSICOS & CRESCIMENTO DOS SERVIÇOS (FLORIANÓPOLIS) -->
+        <section class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 space-y-6">
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 border-b border-slate-100 pb-4">
+                <div>
+                    <span class="bg-blue-100 text-blue-700 text-xs font-semibold px-2.5 py-1 rounded uppercase tracking-wider">Telemetria Urbana & KPIs</span>
+                    <h3 class="text-xl font-bold text-slate-900 mt-1">Monitoramento de Serviços Públicos em Florianópolis</h3>
+                    <p class="text-sm text-slate-500">Indicadores reais auditados via contratos inteligentes e cruzamento de dados públicos (CASAN, IMA-SC, Mobilidade)</p>
+                </div>
+                <span class="text-xs bg-emerald-50 text-emerald-700 font-semibold px-3 py-1.5 rounded-lg border border-emerald-200">
+                    <i class="fa-solid fa-chart-line mr-1.5"></i> Atualização em Tempo Real
+                </span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Indicador 1: Saneamento Básico -->
+                <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <div class="bg-blue-600/10 text-blue-600 p-2.5 rounded-lg">
+                                <i class="fa-solid fa-water text-lg"></i>
+                            </div>
+                            <span class="text-xs font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">+4.2% YoY</span>
+                        </div>
+                        <h4 class="font-bold text-slate-900">Saneamento Básico</h4>
+                        <p class="text-xs text-slate-500 mt-1">Cobertura de esgoto e tratamento avançado integrado (CASAN / Município).</p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-200 flex items-baseline justify-between">
+                        <span class="text-xs text-slate-500">Índice Atual:</span>
+                        <span class="text-lg font-bold text-slate-900">71.4% <span class="text-xs font-normal text-slate-500">da ilha</span></span>
+                    </div>
+                </div>
+
+                <!-- Indicador 2: Qualidade da Água para Banhistas -->
+                <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <div class="bg-cyan-600/10 text-cyan-600 p-2.5 rounded-lg">
+                                <i class="fa-solid fa-umbrella-beach text-lg"></i>
+                            </div>
+                            <span class="text-xs font-bold text-cyan-700 bg-cyan-50 px-2 py-0.5 rounded">IMA-SC Standard</span>
+                        </div>
+                        <h4 class="font-bold text-slate-900">Balneabilidade</h4>
+                        <p class="text-xs text-slate-500 mt-1">Pontos próprios para banho monitorados semanalmente nas praias.</p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-200 flex items-baseline justify-between">
+                        <span class="text-xs text-slate-500">Próprias:</span>
+                        <span class="text-lg font-bold text-slate-900">84.2% <span class="text-xs font-normal text-emerald-600">Próprias</span></span>
+                    </div>
+                </div>
+
+                <!-- Indicador 3: Atendimentos Hospitalares Bem Avaliados -->
+                <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <div class="bg-rose-600/10 text-rose-600 p-2.5 rounded-lg">
+                                <i class="fa-solid fa-hospital text-lg"></i>
+                            </div>
+                            <span class="text-xs font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">SUS Eficiente</span>
+                        </div>
+                        <h4 class="font-bold text-slate-900">Saúde & Hospitais</h4>
+                        <p class="text-xs text-slate-500 mt-1">Índice de satisfação e tempo médio de espera em unidades de saúde.</p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-200 flex items-baseline justify-between">
+                        <span class="text-xs text-slate-500">Aprovação:</span>
+                        <span class="text-lg font-bold text-slate-900">4.3 / 5.0 <span class="text-xs font-normal text-slate-500">NPS Cidadão</span></span>
+                    </div>
+                </div>
+
+                <!-- Indicador 4: Horas no Trânsito -->
+                <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <div class="bg-amber-600/10 text-amber-600 p-2.5 rounded-lg">
+                                <i class="fa-solid fa-car-tunnel text-lg"></i>
+                            </div>
+                            <span class="text-xs font-bold text-amber-700 bg-amber-50 px-2 py-0.5 rounded">Desafio Urbano</span>
+                        </div>
+                        <h4 class="font-bold text-slate-900">Mobilidade & Trânsito</h4>
+                        <p class="text-xs text-slate-500 mt-1">Média diária de tempo em deslocamento casa-trabalho (Eixo Continente-Ilha).</p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-200 flex items-baseline justify-between">
+                        <span class="text-xs text-slate-500">Média Diária:</span>
+                        <span class="text-lg font-bold text-slate-900">52 min <span class="text-xs font-normal text-slate-500">/ trecho</span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO ESPECIAL: SECRETARIA MUNICIPAL DE EDUCAÇÃO (SME) - ANÁLISE MULTIFATORIAL & INVESTIMENTOS -->
+        <section class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 space-y-6">
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 border-b border-slate-100 pb-4">
+                <div>
+                    <span class="bg-amber-100 text-amber-800 text-xs font-semibold px-2.5 py-1 rounded uppercase tracking-wider">Deep-Dive Setorial</span>
+                    <h3 class="text-xl font-bold text-slate-900 mt-1">Secretaria Municipal de Educação (SME): Investimentos e Análise Multifatorial (5 Anos)</h3>
+                    <p class="text-sm text-slate-500">Evolução orçamentária plurianual, indicadores de qualidade (IDEB) e expansão da rede municipal de ensino</p>
+                </div>
+                <div class="text-right">
+                    <span class="text-xs text-slate-500 block">Total Investido (2021-2025):</span>
+                    <span class="text-lg font-bold text-emerald-700">~R$ 3.1 Bilhões <span class="text-xs font-normal text-slate-600">(Acumulado)</span></span>
+                </div>
+            </div>
+
+            <!-- Gráfico / Cards de Investimento Anual -->
+            <div class="grid grid-cols-1 sm:grid-cols-5 gap-4">
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 text-center">
+                    <span class="text-xs text-slate-500 font-medium">2021</span>
+                    <div class="text-base font-bold text-slate-900 mt-1">R$ 520 Mi</div>
+                    <span class="text-[10px] text-emerald-600 font-semibold">Base Constitucional</span>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 text-center">
+                    <span class="text-xs text-slate-500 font-medium">2022</span>
+                    <div class="text-base font-bold text-slate-900 mt-1">R$ 575 Mi</div>
+                    <span class="text-[10px] text-emerald-600 font-semibold">+10.5% YoY</span>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 text-center">
+                    <span class="text-xs text-slate-500 font-medium">2023</span>
+                    <div class="text-base font-bold text-slate-900 mt-1">R$ 640 Mi</div>
+                    <span class="text-[10px] text-emerald-600 font-semibold">+11.3% YoY</span>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 text-center">
+                    <span class="text-xs text-slate-500 font-medium">2024</span>
+                    <div class="text-base font-bold text-slate-900 mt-1">R$ 710 Mi</div>
+                    <span class="text-[10px] text-emerald-600 font-semibold">+10.9% YoY</span>
+                </div>
+                <div class="bg-blue-50 p-4 rounded-xl border border-blue-200 text-center">
+                    <span class="text-xs text-blue-700 font-bold">2025 / 2026 (Projetado)</span>
+                    <div class="text-base font-bold text-blue-900 mt-1">R$ 785 Mi</div>
+                    <span class="text-[10px] text-blue-600 font-semibold">Pico Histórico On-Chain</span>
+                </div>
+            </div>
+
+            <!-- Análise Multifatorial dos Indicadores de Educação -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2">
+                <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 space-y-2">
+                    <div class="flex items-center justify-between">
+                        <h4 class="font-bold text-slate-900 text-sm">1. Desempenho Acadêmico (IDEB)</h4>
+                        <span class="bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold">Top Capitais</span>
+                    </div>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Florianópolis mantém consistente liderança nas séries iniciais do Ensino Fundamental, com média consolidada em <strong>6.4</strong>, superando a média nacional das capitais e demonstrando alta eficiência na retenção de aprendizado.
+                    </p>
+                </div>
+
+                <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 space-y-2">
+                    <div class="flex items-center justify-between">
+                        <h4 class="font-bold text-slate-900 text-sm">2. Expansão da Educação Infantil</h4>
+                        <span class="bg-blue-100 text-blue-800 text-xs px-2 py-0.5 rounded font-bold">+18.4% Vagas</span>
+                    </div>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        O crescimento expressivo na faixa de creches e pré-escola foi impulsionado tanto por novas unidades municipais quanto pelo modelo híbrido de parcerias com Centros Educacionais (CEIs), reduzindo filas de espera de forma estrutural.
+                    </p>
+                </div>
+
+                <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 space-y-2">
+                    <div class="flex items-center justify-between">
+                        <h4 class="font-bold text-slate-900 text-sm">3. Infraestrutura & Inovação Digital</h4>
+                        <span class="bg-purple-100 text-purple-800 text-xs px-2 py-0.5 rounded font-bold">100% Conectado</span>
+                    </div>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Modernização tecnológica das escolas com fibra óptica de alta velocidade, laboratórios de robótica e plataformas de gestão de frequência integradas à nuvem municipal da SMTI.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO: FATURAMENTO SETORIAL - TECNOLOGIA VS TURISMO, CULTURA E LAZER -->
+        <section class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 space-y-6">
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 border-b border-slate-100 pb-4">
+                <div>
+                    <span class="bg-purple-100 text-purple-800 text-xs font-semibold px-2.5 py-1 rounded uppercase tracking-wider">Economia & Faturamento Setorial</span>
+                    <h3 class="text-xl font-bold text-slate-900 mt-1">Comparativo Econômico: Setor de Tecnologia vs. Turismo, Cultura e Lazer</h3>
+                    <p class="text-sm text-slate-500">Dados reais de arrecadação, faturamento bruto anual e impacto no PIB municipal de Florianópolis</p>
+                </div>
+                <span class="text-xs bg-purple-50 text-purple-700 font-semibold px-3 py-1.5 rounded-lg border border-purple-200">
+                    <i class="fa-solid fa-chart-pie mr-1.5"></i> Hub de Inovação & Serviços
+                </span>
+            </div>
+
+            <!-- Cards de Destaque por Setor -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Card Tecnologia -->
+                <div class="bg-gradient-to-br from-indigo-900 to-slate-900 text-white p-6 rounded-2xl shadow-md border border-indigo-500/30 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="bg-indigo-500/30 text-indigo-200 text-xs px-2.5 py-1 rounded font-bold border border-indigo-400/30">Capital da Inovação</span>
+                            <i class="fa-solid fa-microchip text-indigo-400 text-xl"></i>
+                        </div>
+                        <h4 class="text-lg font-bold">Setor de Tecnologia (TI & Software)</h4>
+                        <p class="text-xs text-slate-300 mt-1">Faturamento anual impulsionado por ecossistemas de destaque (ACATE, Softplan, Teltec, etc.).</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-indigo-800/60 flex items-baseline justify-between">
+                        <span class="text-xs text-slate-400">Faturamento Anual:</span>
+                        <span class="text-xl font-extrabold text-emerald-400">~R$ 14.8 Bilhões</span>
+                    </div>
+                </div>
+
+                <!-- Card Turismo -->
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="bg-cyan-100 text-cyan-800 text-xs px-2.5 py-1 rounded font-bold">Turismo & Hotelaria</span>
+                            <i class="fa-solid fa-plane-departure text-cyan-600 text-xl"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-slate-900">Turismo (Alta Temporada & Eventos)</h4>
+                        <p class="text-xs text-slate-500 mt-1">Impacto econômico direto da rede hoteleira, gastronomia, aeroporto internacional e praias.</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-200 flex items-baseline justify-between">
+                        <span class="text-xs text-slate-500">Faturamento Anual:</span>
+                        <span class="text-xl font-bold text-slate-900">~R$ 4.2 Bilhões</span>
+                    </div>
+                </div>
+
+                <!-- Card Cultura e Lazer -->
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="bg-pink-100 text-pink-800 text-xs px-2.5 py-1 rounded font-bold">Economia Criativa</span>
+                            <i class="fa-solid fa-masks-theater text-pink-600 text-xl"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-slate-900">Cultura, Lazer & Entretenimento</h4>
+                        <p class="text-xs text-slate-500 mt-1">Eventos artísticos, festivais gastronômicos, casas noturnas, patrimônio histórico e lazer.</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-200 flex items-baseline justify-between">
+                        <span class="text-xs text-slate-500">Faturamento Anual:</span>
+                        <span class="text-xl font-bold text-slate-900">~R$ 1.6 Bilhões</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tabela Detalhada de Comparativo Setorial -->
+            <div class="overflow-x-auto pt-2">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-slate-50 text-slate-600 text-xs font-semibold uppercase tracking-wider border-b border-slate-200">
+                            <th class="py-3 px-4">Setor Econômico</th>
+                            <th class="py-3 px-4">Participação no PIB Municipal</th>
+                            <th class="py-3 px-4">Geração de Empregos Formais</th>
+                            <th class="py-3 px-4">Média Salarial Relativa</th>
+                            <th class="py-3 px-4">Índice de Crescimento YoY</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100 text-sm">
+                        <tr class="hover:bg-slate-50/50 transition">
+                            <td class="py-3 px-4 font-bold text-slate-900">Tecnologia & Inovação</td>
+                            <td class="py-3 px-4 text-slate-700"><strong>~18.5%</strong> (Líder em valor agregado)</td>
+                            <td class="py-3 px-4 text-slate-600">+24.000 profissionais</td>
+                            <td class="py-3 px-4"><span class="text-emerald-700 font-semibold">Alto (R$ 6.800+)</span></td>
+                            <td class="py-3 px-4"><span class="bg-emerald-50 text-emerald-700 text-xs px-2.5 py-1 rounded-full font-medium">+14.2% a.a.</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50/50 transition">
+                            <td class="py-3 px-4 font-bold text-slate-900">Turismo & Hotelaria</td>
+                            <td class="py-3 px-4 text-slate-700">~12.0%</td>
+                            <td class="py-3 px-4 text-slate-600">+35.000 (Sazonal flutuante)</td>
+                            <td class="py-3 px-4"><span class="text-slate-700">Médio (R$ 2.800)</span></td>
+                            <td class="py-3 px-4"><span class="bg-blue-50 text-blue-700 text-xs px-2.5 py-1 rounded-full font-medium">+5.5% a.a.</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50/50 transition">
+                            <td class="py-3 px-4 font-bold text-slate-900">Cultura, Lazer & Serviços Criativos</td>
+                            <td class="py-3 px-4 text-slate-700">~5.2%</td>
+                            <td class="py-3 px-4 text-slate-600">+12.500 empregos diretos</td>
+                            <td class="py-3 px-4"><span class="text-slate-700">Médio-Alto (R$ 3.500)</span></td>
+                            <td class="py-3 px-4"><span class="bg-indigo-50 text-indigo-700 text-xs px-2.5 py-1 rounded-full font-medium">+8.1% a.a.</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- SEÇÃO: COMPARAÇÃO DE DESEMPENHO DAS SECRETARIAS MUNICIPAIS -->
+        <section class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 space-y-6">
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 border-b border-slate-100 pb-4">
+                <div>
+                    <span class="bg-indigo-100 text-indigo-700 text-xs font-semibold px-2.5 py-1 rounded uppercase tracking-wider">Benchmark Institucional</span>
+                    <h3 class="text-xl font-bold text-slate-900 mt-1">Análise Comparativa de Desempenho das Secretarias (PMF)</h3>
+                    <p class="text-sm text-slate-500">Avaliação baseada em eficiência orçamentária, índice de digitalização de processos e prazos de entrega</p>
+                </div>
+                <span class="text-xs bg-slate-100 text-slate-600 font-semibold px-3 py-1.5 rounded-lg border border-slate-200">
+                    <i class="fa-solid fa-building-columns mr-1.5"></i> Dados Oficiais Cruzados
+                </span>
+            </div>
+
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-slate-50 text-slate-600 text-xs font-semibold uppercase tracking-wider border-b border-slate-200">
+                            <th class="py-3 px-4">Secretaria / Órgão Municipal</th>
+                            <th class="py-3 px-4">Área de Atuação Core</th>
+                            <th class="py-3 px-4">Eficiência Orçamentária</th>
+                            <th class="py-3 px-4">Grau de Digitalização</th>
+                            <th class="py-3 px-4">Status de Inovação</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100 text-sm">
+                        <tr class="hover:bg-slate-50/50 transition">
+                            <td class="py-3 px-4 font-bold text-slate-900">SME <span class="block text-xs font-normal text-slate-500">Secretaria Municipal de Educação</span></td>
+                            <td class="py-3 px-4 text-slate-600">Ensino Fundamental e Infantil</td>
+                            <td class="py-3 px-4"><span class="text-emerald-700 font-semibold">96.1%</span> (Constante Crescimento)</td>
+                            <td class="py-3 px-4"><span class="bg-emerald-50 text-emerald-700 text-xs px-2.5 py-1 rounded-full font-medium">92% (Matrícula Digital)</span></td>
+                            <td class="py-3 px-4"><span class="text-xs text-emerald-600 font-bold">Referência em IDEB</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50/50 transition">
+                            <td class="py-3 px-4 font-bold text-slate-900">SMTI <span class="block text-xs font-normal text-slate-500">Tecnologia, Inovação e Projetos</span></td>
+                            <td class="py-3 px-4 text-slate-600">Transformação Digital e IA</td>
+                            <td class="py-3 px-4"><span class="text-emerald-700 font-semibold">94.8%</span> (Alto retorno)</td>
+                            <td class="py-3 px-4"><span class="bg-emerald-50 text-emerald-700 text-xs px-2.5 py-1 rounded-full font-medium">98% (Plataforma 1Doc)</span></td>
+                            <td class="py-3 px-4"><span class="text-xs text-blue-600 font-bold">Líder em Prazos</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50/50 transition">
+                            <td class="py-3 px-4 font-bold text-slate-900">SMINF <span class="block text-xs font-normal text-slate-500">Infraestrutura e Manutenção</span></td>
+                            <td class="py-3 px-4 text-slate-600">Obras Civis e Vias Públicas</td>
+                            <td class="py-3 px-4"><span class="text-blue-700 font-semibold">88.2%</span> (Monitorado)</td>
+                            <td class="py-3 px-4"><span class="bg-blue-50 text-blue-700 text-xs px-2.5 py-1 rounded-full font-medium">75% (Contratos On-Chain)</span></td>
+                            <td class="py-3 px-4"><span class="text-xs text-emerald-600 font-bold">Sandbox Ativo</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50/50 transition">
+                            <td class="py-3 px-4 font-bold text-slate-900">SMS <span class="block text-xs font-normal text-slate-500">Secretaria Municipal de Saúde</span></td>
+                            <td class="py-3 px-4 text-slate-600">Atendimento Básicos e UPA</td>
+                            <td class="py-3 px-4"><span class="text-amber-700 font-semibold">82.5%</span> (Demanda alta)</td>
+                            <td class="py-3 px-4"><span class="bg-amber-50 text-amber-700 text-xs px-2.5 py-1 rounded-full font-medium">62% (Prontuário Híbrido)</span></td>
+                            <td class="py-3 px-4"><span class="text-xs text-amber-600 font-bold">Foco em Redução de Fila</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50/50 transition">
+                            <td class="py-3 px-4 font-bold text-slate-900">SMMTU <span class="block text-xs font-normal text-slate-500">Mobilidade e Planejamento Urbano</span></td>
+                            <td class="py-3 px-4 text-slate-600">Trânsito, Ilha e Continente</td>
+                            <td class="py-3 px-4"><span class="text-slate-700 font-semibold">79.1%</span> (Complexo)</td>
+                            <td class="py-3 px-4"><span class="bg-slate-100 text-slate-700 text-xs px-2.5 py-1 rounded-full font-medium">54% (Telemetria Parcial)</span></td>
+                            <td class="py-3 px-4"><span class="text-xs text-purple-600 font-bold">Integração IoT Pendente</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- SEÇÃO: REPOSITÓRIO DE PLAYBOOKS E RITOS CÍVICOS DE FLORIANÓPOLIS -->
+        <section class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 space-y-6">
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 border-b border-slate-100 pb-4">
+                <div>
+                    <span class="bg-blue-100 text-blue-700 text-xs font-semibold px-2.5 py-1 rounded uppercase tracking-wider">Rede Neural Urbana & Governança de Base</span>
+                    <h3 class="text-xl font-bold text-slate-900 mt-1">Repositório de Playbooks: Associações e Conselhos de Bairro de Florianópolis</h3>
+                    <p class="text-sm text-slate-500">Digitalização de ritos cívicos, atas inteligentes com IA e aprendizado cruzado entre as comunidades da Ilha e Continente</p>
+                </div>
+                <span class="text-xs bg-emerald-50 text-emerald-700 font-semibold px-3 py-1.5 rounded-lg border border-emerald-200">
+                    <i class="fa-solid fa-book-open mr-1.5"></i> Base Conectada Ativa
+                </span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Playbook 1: AMOCAMP (Campeche) -->
+                <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 flex flex-col justify-between space-y-4">
+                    <div>
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs font-bold text-blue-700 bg-blue-50 px-2.5 py-1 rounded">AMOCAMP (Campeche)</span>
+                            <i class="fa-solid fa-seedling text-blue-600"></i>
+                        </div>
+                        <h4 class="font-bold text-slate-900 text-sm">Gestão de Drenagem e Orçamento Participativo</h4>
+                        <p class="text-xs text-slate-600 mt-1">
+                            Modelo validado de cobrança de contrapartidas viárias e monitoramento comunitário de microdrenagem nas dunas e avenidas principais.
+                        </p>
+                    </div>
+                    <div class="pt-3 border-t border-slate-200 flex items-center justify-between text-xs">
+                        <span class="text-slate-500">Atas Indexadas por IA:</span>
+                        <span class="font-bold text-emerald-600">100% Sincronizado</span>
+                    </div>
+                </div>
+
+                <!-- Playbook 2: AMOLA (Lagoa da Conceição) -->
+                <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 flex flex-col justify-between space-y-4">
+                    <div>
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs font-bold text-cyan-700 bg-cyan-50 px-2.5 py-1 rounded">AMOLA (Lagoa da Conceição)</span>
+                            <i class="fa-solid fa-water text-cyan-600"></i>
+                        </div>
+                        <h4 class="font-bold text-slate-900 text-sm">Proteção Ambiental e Esgoto Cidadão</h4>
+                        <p class="text-xs text-slate-600 mt-1">
+                            Playbook de fiscalização descentralizada de ligações de esgoto integrado aos relatórios da CASAN e IMA-SC com alertas automáticos.
+                        </p>
+                    </div>
+                    <div class="pt-3 border-t border-slate-200 flex items-center justify-between text-xs">
+                        <span class="text-slate-500">Atas Indexadas por IA:</span>
+                        <span class="font-bold text-emerald-600">100% Sincronizado</span>
+                    </div>
+                </div>
+
+                <!-- Playbook 3: AMASAL (Santo Antônio de Lisboa) -->
+                <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 flex flex-col justify-between space-y-4">
+                    <div>
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs font-bold text-purple-700 bg-purple-50 px-2.5 py-1 rounded">AMASAL (Santo Antônio)</span>
+                            <i class="fa-solid fa-landmark text-purple-600"></i>
+                        </div>
+                        <h4 class="font-bold text-slate-900 text-sm">Preservação Histórica e Ruas Calçadas</h4>
+                        <p class="text-xs text-slate-600 mt-1">
+                            Metodologia de conciliação entre tráfego urbano, polo gastronômico e tombamento patrimonial com assembleias híbridas quórum-validado.
+                        </p>
+                    </div>
+                    <div class="pt-3 border-t border-slate-200 flex items-center justify-between text-xs">
+                        <span class="text-slate-500">Atas Indexadas por IA:</span>
+                        <span class="font-bold text-emerald-600">100% Sincronizado</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-blue-50/70 p-4 rounded-xl border border-blue-200 text-xs text-blue-900 flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <i class="fa-solid fa-brain text-blue-600 text-base"></i>
+                    <span><strong>Aprendizado Cruzado Ativo:</strong> O sistema analisa automaticamente os acertos e gargalos entre os bairros, propagando soluções bem-sucedidas em tempo real para toda a rede municipal.</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO: DIGITALIZAÇÃO DE REUNIÕES E ATAS DE CONSELHOS E ASSOCIAÇÕES DE BAIRRO -->
+        <section class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 space-y-6">
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 border-b border-slate-100 pb-4">
+                <div>
+                    <span class="bg-purple-100 text-purple-800 text-xs font-semibold px-2.5 py-1 rounded uppercase tracking-wider">Ritos Cívicos & Governança Descentralizada</span>
+                    <h3 class="text-xl font-bold text-slate-900 mt-1">Digitalização de Reuniões: Próximos Encontros & Atas Indexadas por IA</h3>
+                    <p class="text-sm text-slate-500">Calendário oficial de assembleias comunitárias com datas atualizadas e transcrições imutáveis validadas on-chain</p>
+                </div>
+                <span class="text-xs bg-purple-50 text-purple-700 font-semibold px-3 py-1.5 rounded-lg border border-purple-200">
+                    <i class="fa-solid fa-calendar-check mr-1.5"></i> Cronograma & Atas Ativas
+                </span>
+            </div>
+
+            <!-- Grid de Próximos Encontros -->
+            <div class="space-y-4">
+                <h4 class="font-bold text-slate-900 text-sm flex items-center">
+                    <i class="fa-solid fa-clock text-blue-600 mr-2"></i> Próximos Encontros e Assembleias Comunitárias (Setembro / Outubro 2026)
+                </h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <!-- Encontro 1 -->
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 space-y-2 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-xs font-bold text-blue-700 bg-blue-50 px-2 py-0.5 rounded">AMOCAMP (Campeche)</span>
+                                <span class="text-xs text-slate-500 font-medium">24 Set 2026</span>
+                            </div>
+                            <h5 class="font-bold text-slate-900 text-xs mt-2">Assembleia Ordinária de Drenagem</h5>
+                            <p class="text-[11px] text-slate-600 mt-1">
+                                Pauta: Orçamento participativo para microdrenagem na Av. Pequeno Príncipe e contrapartidas viárias.
+                            </p>
+                        </div>
+                        <div class="pt-2 border-t border-slate-200 flex items-center justify-between text-[11px]">
+                            <span class="text-slate-500">Horário: <strong class="text-slate-800">19:30</strong></span>
+                            <span class="text-emerald-700 font-semibold bg-emerald-50 px-2 py-0.5 rounded">Inscrições Abertas</span>
+                        </div>
+                    </div>
+
+                    <!-- Encontro 2 -->
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 space-y-2 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-xs font-bold text-cyan-700 bg-cyan-50 px-2 py-0.5 rounded">AMOLA (Lagoa)</span>
+                                <span class="text-xs text-slate-500 font-medium">28 Set 2026</span>
+                            </div>
+                            <h5 class="font-bold text-slate-900 text-xs mt-2">Conselho Gestor Ambiental</h5>
+                            <p class="text-[11px] text-slate-600 mt-1">
+                                Pauta: Relatório de balneabilidade da lagoa, fiscalização de esgoto e integração com IMA-SC.
+                            </p>
+                        </div>
+                        <div class="pt-2 border-t border-slate-200 flex items-center justify-between text-[11px]">
+                            <span class="text-slate-500">Horário: <strong class="text-slate-800">20:00</strong></span>
+                            <span class="text-emerald-700 font-semibold bg-emerald-50 px-2 py-0.5 rounded">Híbrido (Presencial/Zoom)</span>
+                        </div>
+                    </div>
+
+                    <!-- Encontro 3 -->
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 space-y-2 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-xs font-bold text-purple-700 bg-purple-50 px-2 py-0.5 rounded">AMASAL (Santo Antônio)</span>
+                                <span class="text-xs text-slate-500 font-medium">02 Out 2026</span>
+                            </div>
+                            <h5 class="font-bold text-slate-900 text-xs mt-2">Reunião do Patrimônio Histórico</h5>
+                            <p class="text-[11px] text-slate-600 mt-1">
+                                Pauta: Diretrizes de tráfego, vagas de estacionamento e preservação das ruas de calçamento original.
+                            </p>
+                        </div>
+                        <div class="pt-2 border-t border-slate-200 flex items-center justify-between text-[11px]">
+                            <span class="text-slate-500">Horário: <strong class="text-slate-800">19:00</strong></span>
+                            <span class="text-emerald-700 font-semibold bg-emerald-50 px-2 py-0.5 rounded">Quórum Validado</span>
+                        </div>
+                    </div>
+
+                    <!-- Encontro 4 -->
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 space-y-2 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-xs font-bold text-indigo-700 bg-indigo-50 px-2 py-0.5 rounded">AMOC (Córrego Grande)</span>
+                                <span class="text-xs text-slate-500 font-medium">07 Out 2026</span>
+                            </div>
+                            <h5 class="font-bold text-slate-900 text-xs mt-2">Fórum de Mobilidade Urbana</h5>
+                            <p class="text-[11px] text-slate-600 mt-1">
+                                Pauta: Expansão de ciclovias, integração com linhas universitárias e travessias seguras.
+                            </p>
+                        </div>
+                        <div class="pt-2 border-t border-slate-200 flex items-center justify-between text-[11px]">
+                            <span class="text-slate-500">Horário: <strong class="text-slate-800">19:00</strong></span>
+                            <span class="text-emerald-700 font-semibold bg-emerald-50 px-2 py-0.5 rounded">Aberto à Comunidade</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tabela de Atas dos Últimos Encontros -->
+            <div class="space-y-3 pt-2">
+                <h4 class="font-bold text-slate-900 text-sm flex items-center">
+                    <i class="fa-solid fa-file-lines text-purple-600 mr-2"></i> Atas dos Últimos Encontros (Indexação Automática por IA)
+                </h4>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-slate-50 text-slate-600 text-xs font-semibold uppercase tracking-wider border-b border-slate-200">
+                                <th class="py-3 px-4">Associação / Conselho</th>
+                                <th class="py-3 px-4">Ata & Referência</th>
+                                <th class="py-3 px-4">Data da Reunião</th>
+                                <th class="py-3 px-4">Quórum Registrado</th>
+                                <th class="py-3 px-4">Status & Hash On-Chain</th>
+                                <th class="py-3 px-4 text-center">Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-100 text-sm">
+                            <tr class="hover:bg-slate-50/50 transition">
+                                <td class="py-3 px-4 font-bold text-slate-900">AMOCAMP (Campeche)</td>
+                                <td class="py-3 px-4 text-slate-700">Ata #142 — Aprovação de Microdrenagem</td>
+                                <td class="py-3 px-4 text-slate-600">15 de Agosto de 2026</td>
+                                <td class="py-3 px-4"><span class="text-emerald-700 font-semibold">84 presentes</span> (Validação OK)</td>
+                                <td class="py-3 px-4"><span class="text-xs font-mono bg-slate-100 text-slate-700 px-2 py-0.5 rounded">0x8f4c...32b1</span></td>
+                                <td class="py-3 px-4 text-center">
+                                    <button class="text-blue-600 hover:text-blue-900 font-medium text-xs bg-blue-50 hover:bg-blue-100 px-3 py-1.5 rounded transition">Ver Ata (IA)</button>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-slate-50/50 transition">
+                                <td class="py-3 px-4 font-bold text-slate-900">AMOLA (Lagoa da Conceição)</td>
+                                <td class="py-3 px-4 text-slate-700">Ata #098 — Fiscalização Conjunta CASAN</td>
+                                <td class="py-3 px-4 text-slate-600">10 de Agosto de 2026</td>
+                                <td class="py-3 px-4"><span class="text-emerald-700 font-semibold">112 presentes</span> (Quórum Alto)</td>
+                                <td class="py-3 px-4"><span class="text-xs font-mono bg-slate-100 text-slate-700 px-2 py-0.5 rounded">0x39a1...ff04</span></td>
+                                <td class="py-3 px-4 text-center">
+                                    <button class="text-blue-600 hover:text-blue-900 font-medium text-xs bg-blue-50 hover:bg-blue-100 px-3 py-1.5 rounded transition">Ver Ata (IA)</button>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-slate-50/50 transition">
+                                <td class="py-3 px-4 font-bold text-slate-900">AMASAL (Santo Antônio)</td>
+                                <td class="py-3 px-4 text-slate-700">Ata #076 — Polo Gastronômico & Tráfego</td>
+                                <td class="py-3 px-4 text-slate-600">28 de Julho de 2026</td>
+                                <td class="py-3 px-4"><span class="text-emerald-700 font-semibold">67 presentes</span> (Aprovado)</td>
+                                <td class="py-3 px-4"><span class="text-xs font-mono bg-slate-100 text-slate-700 px-2 py-0.5 rounded">0x72e5...91a8</span></td>
+                                <td class="py-3 px-4 text-center">
+                                    <button class="text-blue-600 hover:text-blue-900 font-medium text-xs bg-blue-50 hover:bg-blue-100 px-3 py-1.5 rounded transition">Ver Ata (IA)</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO: LÓGICA DE MINERAÇÃO CÍVICA (PROOF-OF-CIVIC-WORK) -->
+        <section class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 space-y-6">
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 border-b border-slate-100 pb-4">
+                <div>
+                    <span class="bg-emerald-100 text-emerald-800 text-xs font-semibold px-2.5 py-1 rounded uppercase tracking-wider">Social Capital Amplifier • Protocolo de Incentivo</span>
+                    <h3 class="text-xl font-bold text-slate-900 mt-1">Lógica de Mineração Cívica & Recompensas em Tokens</h3>
+                    <p class="text-sm text-slate-500">Transformando participação cidadã e fiscalização ativa em créditos de capital social e benefícios fiscais reais</p>
+                </div>
+                <span class="text-xs bg-purple-50 text-purple-700 font-semibold px-3 py-1.5 rounded-lg border border-purple-200">
+                    <i class="fa-solid fa-coins mr-1.5"></i> Proof-of-Civic-Work
+                </span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Ação 1: Waze de Obras -->
+                <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 space-y-3">
+                    <div class="bg-blue-600/10 text-blue-600 w-10 h-10 rounded-lg flex items-center justify-center font-bold">
+                        <i class="fa-solid fa-map-pin"></i>
+                    </div>
+                    <h4 class="font-bold text-slate-900 text-sm">Waze de Obras & Denúncias</h4>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Reporte de buracos, irregularidades ou obras paradas vinculadas ao sistema oficial da prefeitura (1Doc). Libera tokens ao verificar o atendimento.
+                    </p>
+                    <span class="text-[10px] bg-blue-50 text-blue-700 px-2 py-0.5 rounded font-bold inline-block">Validação: Dados Oficiais + IA</span>
+                </div>
+
+                <!-- Ação 2: Conselhos de Bairro -->
+                <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 space-y-3">
+                    <div class="bg-indigo-600/10 text-indigo-600 w-10 h-10 rounded-lg flex items-center justify-center font-bold">
+                        <i class="fa-solid fa-users-rectangle"></i>
+                    </div>
+                    <h4 class="font-bold text-slate-900 text-sm">Conselhos & Assembleias</h4>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Presença e votação ativa em assembleias de associações comunitárias digitalizadas, com atas geradas por IA e registro imutável on-chain.
+                    </p>
+                    <span class="text-[10px] bg-indigo-50 text-indigo-700 px-2 py-0.5 rounded font-bold inline-block">Validação: Quórum & Assinatura</span>
+                </div>
+
+                <!-- Ação 3: Trabalho Voluntário -->
+                <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 space-y-3">
+                    <div class="bg-emerald-600/10 text-emerald-600 w-10 h-10 rounded-lg flex items-center justify-center font-bold">
+                        <i class="fa-solid fa-hand-holding-heart"></i>
+                    </div>
+                    <h4 class="font-bold text-slate-900 text-sm">Trabalho Social & Voluntariado</h4>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Mutirões, ações ambientais e apoio a ONGs parceiras homologadas pelas secretarias municipais (Assistência Social, Meio Ambiente).
+                    </p>
+                    <span class="text-[10px] bg-emerald-50 text-emerald-700 px-2 py-0.5 rounded font-bold inline-block">Validação: Homologação Oficial</span>
+                </div>
+
+                <!-- Ação 4: Recompensa Fiscal -->
+                <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 space-y-3">
+                    <div class="bg-purple-600/10 text-purple-600 w-10 h-10 rounded-lg flex items-center justify-center font-bold">
+                        <i class="fa-solid fa-percent"></i>
+                    </div>
+                    <h4 class="font-bold text-slate-900 text-sm">Conversão em Benefícios</h4>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Acúmulo de créditos de Capital Social convertidos em abatimentos proporcionais no IPTU, taxas municipais e prioridade em serviços públicos.
+                    </p>
+                    <span class="text-[10px] bg-purple-50 text-purple-700 px-2 py-0.5 rounded font-bold inline-block">Utilidade: Desconto Tributário</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DE MÓDULOS E COMPONENTES -->
+        <section class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
+            <div class="p-6 border-b border-slate-100 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+                <div>
+                    <h3 class="text-lg font-bold text-slate-900">Módulos do Sistema e Infraestrutura On-Chain</h3>
+                    <p class="text-sm text-slate-500">Mapeamento de contratos inteligentes, Waze de Obras e governança de tokens</p>
+                </div>
+                <span class="text-xs bg-slate-100 text-slate-600 px-3 py-1.5 rounded-lg font-medium border border-slate-200">
+                    <i class="fa-solid fa-city mr-1.5"></i> Florianópolis Sandbox Ativo
+                </span>
+            </div>
+
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-slate-50 text-slate-600 text-xs font-semibold uppercase tracking-wider border-b border-slate-200">
+                            <th class="py-4 px-6">Módulo / Camada</th>
+                            <th class="py-4 px-6">Componente / Objeto</th>
+                            <th class="py-4 px-6">Tecnologia</th>
+                            <th class="py-4 px-6">Status do Deploy</th>
+                            <th class="py-4 px-6 text-center">Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100 text-sm">
+                        <!-- Módulo 1 -->
+                        <tr class="hover:bg-slate-50/50 transition">
+                            <td class="py-4 px-6">
+                                <div class="font-bold text-slate-900">01_Smart_Contracts</div>
+                                <div class="text-xs text-slate-500">DeFi Cívico & Escrow</div>
+                            </td>
+                            <td class="py-4 px-6">
+                                <div class="font-medium text-slate-800">Debentures Municipais Tokenizadas</div>
+                                <div class="text-xs text-slate-500">Contas Escrow com liberação atrelada a marcos físicos</div>
+                            </td>
+                            <td class="py-4 px-6">
+                                <span class="bg-slate-100 text-slate-700 text-xs font-medium px-2.5 py-1 rounded">Rust / Anchor</span>
+                            </td>
+                            <td class="py-4 px-6">
+                                <span class="inline-flex items-center text-xs font-semibold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-200">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 mr-1.5"></span> Mainnet Ready
+                                </span>
+                            </td>
+                            <td class="py-4 px-6 text-center">
+                                <button class="text-blue-600 hover:text-blue-900 font-medium text-xs bg-blue-50 hover:bg-blue-100 px-3 py-1.5 rounded transition">Ver Código</button>
+                            </td>
+                        </tr>
+
+                        <!-- Módulo 2 -->
+                        <tr class="hover:bg-slate-50/50 transition">
+                            <td class="py-4 px-6">
+                                <div class="font-bold text-slate-900">02_Waze_de_Obras</div>
+                                <div class="text-xs text-slate-500">Crowdsourcing Urbano</div>
+                            </td>
+                            <td class="py-4 px-6">
+                                <div class="font-medium text-slate-800">Mapeamento Participativo de Infraestrutura</div>
+                                <div class="text-xs text-slate-500">População aponta e prioriza demandas via app com validação em IA</div>
+                            </td>
+                            <td class="py-4 px-6">
+                                <span class="bg-slate-100 text-slate-700 text-xs font-medium px-2.5 py-1 rounded">Python / Solana-Py</span>
+                            </td>
+                            <td class="py-4 px-6">
+                                <span class="inline-flex items-center text-xs font-semibold text-blue-700 bg-blue-50 px-2.5 py-1 rounded-full border border-blue-200">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-blue-500 mr-1.5"></span> Em Execução
+                                </span>
+                            </td>
+                            <td class="py-4 px-6 text-center">
+                                <button class="text-blue-600 hover:text-blue-900 font-medium text-xs bg-blue-50 hover:bg-blue-100 px-3 py-1.5 rounded transition">Ver Logs</button>
+                            </td>
+                        </tr>
+
+                        <!-- Módulo 3 -->
+                        <tr class="hover:bg-slate-50/50 transition">
+                            <td class="py-4 px-6">
+                                <div class="font-bold text-slate-900">03_Consensus_Layer</div>
+                                <div class="text-xs text-slate-500">Validation Subnet</div>
+                            </td>
+                            <td class="py-4 px-6">
+                                <div class="font-medium text-slate-800">Nós Validadores Bittensor</div>
+                                <div class="text-xs text-slate-500">Auditoria descentralizada de métricas de valor e impacto público</div>
+                            </td>
+                            <td class="py-4 px-6">
+                                <span class="bg-slate-100 text-slate-700 text-xs font-medium px-2.5 py-1 rounded">Bittensor API</span>
+                            </td>
+                            <td class="py-4 px-6">
+                                <span class="inline-flex items-center text-xs font-semibold text-indigo-700 bg-indigo-50 px-2.5 py-1 rounded-full border border-indigo-200">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-indigo-500 mr-1.5"></span> Sincronizado
+                                </span>
+                            </td>
+                            <td class="py-4 px-6 text-center">
+                                <button class="text-blue-600 hover:text-blue-900 font-medium text-xs bg-blue-50 hover:bg-blue-100 px-3 py-1.5 rounded transition">Ver Status</button>
+                            </td>
+                        </tr>
+
+                        <!-- Módulo 4 -->
+                        <tr class="hover:bg-slate-50/50 transition">
+                            <td class="py-4 px-6">
+                                <div class="font-bold text-slate-900">04_Tokenomics</div>
+                                <div class="text-xs text-slate-500">Governança & Reputação</div>
+                            </td>
+                            <td class="py-4 px-6">
+                                <div class="font-medium text-slate-800">DAO Cívica & Currículo On-Chain</div>
+                                <div class="text-xs text-slate-500">Staking de debentures e histórico imutável de entregas dos gestores</div>
+                            </td>
+                            <td class="py-4 px-6">
+                                <span class="bg-slate-100 text-slate-700 text-xs font-medium px-2.5 py-1 rounded">SPL Token Standard</span>
+                            </td>
+                            <td class="py-4 px-6">
+                                <span class="inline-flex items-center text-xs font-semibold text-purple-700 bg-purple-50 px-2.5 py-1 rounded-full border border-purple-200">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-purple-500 mr-1.5"></span> Configurado
+                                </span>
+                            </td>
+                            <td class="py-4 px-6 text-center">
+                                <button class="text-blue-600 hover:text-blue-900 font-medium text-xs bg-blue-50 hover:bg-blue-100 px-3 py-1.5 rounded transition">Ver Specs</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- REPOSITÓRIO E ESTRUTURA DE PASTAS -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 md:col-span-2">
+                <h4 class="font-bold text-slate-900 mb-1 flex items-center">
+                    <i class="fa-solid fa-folder-open text-blue-600 mr-2"></i> Estrutura do Repositório (ProfitCity Workspace)
+                </h4>
+                <p class="text-xs text-slate-500 mb-4">Arquitetura modular englobando smart contracts, engine de IA e governança de tokens</p>
+                
+                <div class="bg-slate-900 text-slate-200 p-4 rounded-xl font-mono text-xs space-y-2 border border-slate-800">
+                    <div class="text-blue-400">📁 PROFITCITY_FLORIPA_WORKSPACE/</div>
+                    <div class="pl-4 text-slate-300">├── 📁 01_Smart_Contracts/ <span class="text-slate-500">(Rust / Anchor - Escrow & Debentures)</span></div>
+                    <div class="pl-4 text-slate-300">├── 📁 02_Waze_de_Obras/ <span class="text-slate-500">(processar_edital.py / Crowdsourcing Harvesters)</span></div>
+                    <div class="pl-4 text-slate-300">├── 📁 03_Bittensor_Nodes/ <span class="text-slate-500">(Validators & Subnet Consensus)</span></div>
+                    <div class="pl-4 text-slate-300">├── 📁 04_Tokenomics_DAO/ <span class="text-slate-500">(SPL Mint & Token Governance Staking)</span></div>
+                    <div class="pl-4 text-emerald-400 font-bold">└── 📁 05_Audits_Logs/ <span class="text-slate-500">(Security & Fuzzing reports)</span></div>
+                </div>
+            </div>
+
+            <!-- Painel de Ações Rápidas / Governança -->
+            <div class="bg-gradient-to-br from-slate-900 to-blue-950 text-white p-6 rounded-2xl shadow-sm border border-blue-900 flex flex-col justify-between">
+                <div>
+                    <h4 class="font-bold text-white mb-2 flex items-center">
+                        <i class="fa-solid fa-bolt text-blue-400 mr-2"></i> Pipeline Actions
+                    </h4>
+                    <p class="text-xs text-slate-300 leading-relaxed mb-4">
+                        Execução de varredura automatizada de demandas cidadãs e validação de blocos em cluster descentralizado.
+                    </p>
+                </div>
+                <button class="w-full bg-blue-600 hover:bg-blue-500 text-white font-medium text-xs py-3 rounded-xl transition shadow-lg shadow-blue-600/30 flex items-center justify-center space-x-2">
+                    <i class="fa-solid fa-terminal"></i>
+                    <span>Executar Pipeline de Validação</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- PROPOSTA DE LEI MUNICIPAL: CONCEITO DE DE-FI CIDADÃO -->
+        <section class="bg-gradient-to-br from-slate-900 via-slate-800 to-blue-950 text-white rounded-2xl p-6 md:p-8 shadow-xl border border-blue-500/40 space-y-6">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 border-b border-blue-900/60 pb-5">
+                <div>
+                    <span class="bg-purple-500/20 text-purple-300 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider border border-purple-400/30">
+                        Proposta Legislativa Inovadora
+                    </span>
+                    <h3 class="text-2xl font-bold mt-2">Marco Legal: Instituição do Sistema de Financiamento Descentralizado Cidadão (DeFi Cidadão)</h3>
+                    <p class="text-slate-300 text-sm mt-1">Anteprojeto de Lei Municipal para emissão de títulos de dívida tokenizados e participação direta da comunidade no capex urbano.</p>
+                </div>
+                <div class="bg-white/10 p-3.5 rounded-xl border border-white/10 text-center min-w-[160px]">
+                    <span class="text-xs text-blue-300 block uppercase font-medium">Instrumento Legal</span>
+                    <span class="text-sm font-bold">Token SPL / Debênture</span>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
+                <div class="bg-white/5 p-5 rounded-xl border border-white/10 space-y-2">
+                    <div class="text-purple-400 font-bold flex items-center">
+                        <i class="fa-solid fa-file-contract mr-2"></i> 1. O Empréstimo via Tokens
+                    </div>
+                    <p class="text-slate-300 text-xs leading-relaxed">
+                        O cidadão adquire tokens representativos de frações de debêntures municipais emitidas para pavimentação, saneamento e infraestrutura. O capital entra direto na conta escrow do projeto, sem intermediários financeiros tradicionais.
+                    </p>
+                </div>
+
+                <div class="bg-white/5 p-5 rounded-xl border border-white/10 space-y-2">
+                    <div class="text-blue-400 font-bold flex items-center">
+                        <i class="fa-solid fa-shield-halved mr-2"></i> 2. Títulos Oficiais e Garantidos
+                    </div>
+                    <p class="text-slate-300 text-xs leading-relaxed">
+                        Em contrapartida ao aporte, o investidor recebe títulos de dívida oficiais registrados on-chain com respaldo jurídico e garantia de liquidez atrelada à arrecadação de taxas e receitas municipais específicas.
+                    </p>
+                </div>
+
+                <div class="bg-white/5 p-5 rounded-xl border border-white/10 space-y-2">
+                    <div class="text-emerald-400 font-bold flex items-center">
+                        <i class="fa-solid fa-chart-pie mr-2"></i> 3. Retorno com Prova de Valor
+                    </div>
+                    <p class="text-slate-300 text-xs leading-relaxed">
+                        O rendimento e o resgate do principal são liberados automaticamente por contratos inteligentes assim que os nós validadores da rede Bittensor attestam a entrega física e a qualidade da obra pública demandada pelo Waze de Obras.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-blue-950/60 p-4 rounded-xl border border-blue-500/30 flex flex-col sm:flex-row items-center justify-between text-xs gap-4">
+                <div class="flex items-center space-x-3 text-slate-300">
+                    <i class="fa-solid fa-scale-balanced text-blue-400 text-lg"></i>
+                    <span>Este marco regulatório descentralizado posiciona Florianópolis como pioneira global em governança fiscal programável e open-finance municipal.</span>
+                </div>
+                <button class="bg-purple-600 hover:bg-purple-500 text-white font-semibold px-4 py-2.5 rounded-lg transition shadow-md whitespace-nowrap">
+                    Baixar Minuta da Lei (Draft)
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="max-w-7xl mx-auto px-4 py-6 text-center text-xs text-slate-400 border-t border-slate-200 mt-12">
+        ProfitCity Florianópolis Sandbox • Social Capital Amplifier • Gestão Pública Baseada em Valor e Eficiência.
+    </footer>
+
+</body>
+</html>
